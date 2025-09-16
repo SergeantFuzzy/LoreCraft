@@ -1,0 +1,16 @@
+name: LoreCraft
+main: com.lorecraft.LoreCraftPlugin
+version: 1.0.0
+api-version: 1.13
+authors: [ "SergantFuzzy" ]
+description: Server Story Builder Plugin — books, dialogues, cutscenes, holograms, particles, and more.
+softdepend: [ PlaceholderAPI ]
+commands:
+  lorecraft:
+    aliases: [ lc ]
+    description: Main LoreCraft command
+    usage: /<command> help
+permissions:
+  lorecraft.*:
+    description: Full access to LoreCraft
+    default: op
