@@ -1,0 +1,17 @@
+prefix: "<gradient:#ffb400:#ff6a00>[LoreCraft]</gradient> "
+modules:
+  books: true
+  dialogues: true
+  scenes: true
+  holograms: true
+  effects: true
+  placeholders: true
+  gui: true
+
+join:
+  enabled: true
+  message: "<yellow>Welcome,</yellow> <white><player></white> <gray>→</gray> <click:run_command:'/lc help'><hover:show_text:'<gradient:#ffb400:#ff6a00>→ Open LoreCraft Help</gradient>'><gradient:#ffb400:#ff6a00><bold>[ Open Help ]</bold></gradient></hover></click>"
+
+leave:
+  enabled: true
+  message: "<gray>Farewell,</gray> <white><player></white> <gray>— see you soon.</gray>"

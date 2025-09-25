@@ -1,0 +1,84 @@
+name: LoreCraft
+main: com.sergeantfuzzy.lorecraft.LoreCraft
+version: 1.0.0
+api-version: '1.20'
+author: Sergeant Fuzzy
+description: Craft quests, cutscenes, and NPC tales—without leaving the game.
+website: https://builtbybit.com/resources/
+load: POSTWORLD
+softdepend:
+  - PlaceholderAPI
+
+commands:
+  lc:
+    description: LoreCraft root command
+    usage: /lc help
+    aliases: [lorecraft, lcraft, lorec]
+    permission: lorecraft.use
+
+  lcpacks:
+    description: List or reload LoreCraft packs
+    usage: /lcpacks [reload]
+    permission: lorecraft.admin
+
+permissions:
+  lorecraft.*:
+    description: All LoreCraft permissions
+    default: op
+    children:
+      lorecraft.holo.create: true
+      lorecraft.holo.edit: true
+      lorecraft.holo.move: true
+      lorecraft.holo.delete: true
+      lorecraft.holo.gui: true
+      lorecraft.holo.toggle: true
+      lorecraft.holo.see: true
+
+  lorecraft.holo.create:
+    description: Create holograms
+    default: op
+  lorecraft.holo.edit:
+    description: Edit hologram lines
+    default: op
+  lorecraft.holo.move:
+    description: Move holograms
+    default: op
+  lorecraft.holo.delete:
+    description: Delete holograms
+    default: op
+  lorecraft.holo.gui:
+    description: Open the hologram multiline editor GUI
+    default: op
+  lorecraft.holo.toggle:
+    description: Enable/disable holograms
+    default: op
+  lorecraft.holo.see:
+    description: Toggle per-user visibility
+    default: op
+
+  lorecraft.use:
+    description: Access /lc
+    default: true
+
+  lorecraft.help:
+    description: Use /lc help
+    default: true
+
+  lorecraft.about:
+    description: Use /lc about
+    default: true
+
+  lorecraft.gui.open:
+    description: Open the LoreCraft main GUI
+    default: true
+
+  lorecraft.book.gui:
+    description: Open the LoreCraft Book GUI
+    default: true
+
+  lorecraft.admin:
+    default: op
+
+  lorecraft.admin.reload:
+    description: Reload LoreCraft configs
+    default: op

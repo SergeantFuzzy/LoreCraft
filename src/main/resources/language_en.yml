@@ -1,0 +1,35 @@
+meta:
+  locale: en_US
+  author: Sergeant Fuzzy
+
+about.lines:
+  - ""
+  - "<gradient:#ffb400:#ff6a00><bold>✦ LoreCraft v{VERSION}</bold></gradient>"
+  - "<gray>Description:</gray> <white>{DESC}</white>"
+  - "<gray>Authors:</gray> <white>{AUTHORS}</white>"
+  - "<gray>Website:</gray> <white>{WEBSITE}</white>"
+
+ui:
+  main_title: '<gradient:#ffb400:#ff6a00><bold>✦ LoreCraft • Story Builder ✦</bold></gradient>'
+  books_title: '<gradient:#ffb400:#ff6a00><bold>Books • Editor</bold></gradient>'
+
+usage.lc.lines:
+  - ""
+  - "<gray>───────────────────────────────────</gray>"
+  - "<gold><bold>Usage</bold></gold> <gray>→</gray> <white>/lc</white> <gray><</gray>help|about|reload<gray>></gray>"
+  - ""
+  - "<gray>Actions:</gray>"
+  - "<gray>-</gray> <click:run_command:'/lc help'><hover:show_text:'Run /lc help'><gradient:#ffb400:#ff6a00><bold>[ Help ]</bold></gradient></hover></click>"
+  - "<gray>-</gray> <click:run_command:'/lc about'><hover:show_text:'Show plugin info'><yellow><bold>[ About ]</bold></yellow></hover></click>"
+  - "<gray>-</gray> <click:suggest_command:'/lc reload'><hover:show_text:'Suggest /lc reload (admin)'><red><bold>[ Reload ]</bold></red></hover></click>"
+  - "<gray>───────────────────────────────────</gray>"
+
+reload.ok: "<hover:show_text:'<yellow>Reloaded files:</yellow>\n<gray>•</gray> <white>config.yml</white>\n<gray>•</gray> <white>language_en.yml</white>'><green>✔ Reload complete.</green></hover>"
+reload.fail: "<red>✖ Reload failed. See console.</red>"
+
+help.title: "<gradient:#ffb400:#ff6a00><bold>✦ LoreCraft Help (Page {PAGE}/{PAGES})</bold></gradient>"
+help.entry: "<gold>/lc {CMD}</gold> <gray>—</gray> <white>{DESC}</white>"
+help.footer: "<gray>Use</gray> <white>/lc help {NEXT}</white> <gray>for next page.</gray>"
+
+joins.message: "{TEXT}"
+leaves.message: "{TEXT}"
